@@ -6,6 +6,8 @@ import { ToastContainer} from 'react-toastify';
 
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 
 const geistSans = Geist({
@@ -26,7 +28,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <head>
+      {/* <head>
         <link
           rel="stylesheet"
           type="text/css"
@@ -37,7 +39,7 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
           type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
-        /></head>
+        /></head> */}
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased lightMode`}>
         <Navbar/>
         {children}
